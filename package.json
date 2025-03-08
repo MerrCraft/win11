@@ -2,7 +2,7 @@
   "name": "react-os-template",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://MerrCraft.github.io/react-os-template",
+  "homepage": "https://MerrCraft.github.io/win11",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
