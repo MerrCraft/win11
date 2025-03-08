@@ -38,11 +38,13 @@ const Window = ({ id, title, children, isMinimized, isFullscreen, onClose, onMin
 const Taskbar = ({ windows, onOpenWindow }) => {
   return (
     <div className="taskbar">
-      {windows.map(window => (
-        <button key={window.id} onClick={() => onOpenWindow(window.id)}>
-          {window.title}
-        </button>
-      ))}
+      <div className="taskbar-center">
+        {windows.map(window => (
+          <button key={window.id} onClick={() => onOpenWindow(window.id)}>
+            {window.title}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
