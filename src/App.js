@@ -47,6 +47,7 @@ const Window = ({
       className={windowClassNames}
       enableResizing={!isFullscreen && !isMinimized}
       disableDragging={isFullscreen || isMinimized}
+      dragHandleClassName="window-header"
     >
       <div>
         <div className="window-header">
