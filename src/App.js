@@ -6,7 +6,7 @@ const Window = ({ id, title, children, isMinimized, isFullscreen, onClose, onMin
   const windowClassNames = `window ${isFullscreen ? 'fullscreen' : ''} ${isMinimized ? 'minimized' : ''}`;
 
   return (
-    <Draggable bounds="parent" disabled={isFullscreen || isMinimized}>
+    <Draggable handle=".window-header" bounds="parent" disabled={isFullscreen || isMinimized}>
       <div className={windowClassNames}>
         <div className="window-header">
           <span>{title}</span>

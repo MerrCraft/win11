@@ -40,6 +40,7 @@ body, html, #root {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  cursor: grab;
 }
 
 .window-header {
