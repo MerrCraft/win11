@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-os-template/static/css/main.3aad5054.chunk.css",
-    "main.js": "/react-os-template/static/js/main.ed29164c.chunk.js",
-    "main.js.map": "/react-os-template/static/js/main.ed29164c.chunk.js.map",
-    "runtime-main.js": "/react-os-template/static/js/runtime-main.60fcbb90.js",
-    "runtime-main.js.map": "/react-os-template/static/js/runtime-main.60fcbb90.js.map",
-    "static/js/2.ef6c091a.chunk.js": "/react-os-template/static/js/2.ef6c091a.chunk.js",
-    "static/js/2.ef6c091a.chunk.js.map": "/react-os-template/static/js/2.ef6c091a.chunk.js.map",
-    "index.html": "/react-os-template/index.html",
-    "static/css/main.3aad5054.chunk.css.map": "/react-os-template/static/css/main.3aad5054.chunk.css.map",
-    "static/js/2.ef6c091a.chunk.js.LICENSE.txt": "/react-os-template/static/js/2.ef6c091a.chunk.js.LICENSE.txt"
+    "main.css": "/win11/static/css/main.3aad5054.chunk.css",
+    "main.js": "/win11/static/js/main.ed29164c.chunk.js",
+    "main.js.map": "/win11/static/js/main.ed29164c.chunk.js.map",
+    "runtime-main.js": "/win11/static/js/runtime-main.b3e396a6.js",
+    "runtime-main.js.map": "/win11/static/js/runtime-main.b3e396a6.js.map",
+    "static/js/2.ef6c091a.chunk.js": "/win11/static/js/2.ef6c091a.chunk.js",
+    "static/js/2.ef6c091a.chunk.js.map": "/win11/static/js/2.ef6c091a.chunk.js.map",
+    "index.html": "/win11/index.html",
+    "static/css/main.3aad5054.chunk.css.map": "/win11/static/css/main.3aad5054.chunk.css.map",
+    "static/js/2.ef6c091a.chunk.js.LICENSE.txt": "/win11/static/js/2.ef6c091a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.60fcbb90.js",
+    "static/js/runtime-main.b3e396a6.js",
     "static/js/2.ef6c091a.chunk.js",
     "static/css/main.3aad5054.chunk.css",
     "static/js/main.ed29164c.chunk.js"
