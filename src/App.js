@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Draggable from 'react-draggable';
+import { Rnd } from 'react-rnd';
 import './App.css';
 
 const Window = ({ id, title, children, isMinimized, isFullscreen, onClose, onMinimize, onToggleFullscreen }) => {
@@ -7,17 +8,29 @@ const Window = ({ id, title, children, isMinimized, isFullscreen, onClose, onMin
 
   return (
     <Draggable handle=".window-header" bounds="parent" disabled={isFullscreen || isMinimized}>
-      <div className={windowClassNames}>
-        <div className="window-header">
-          <span>{title}</span>
-          <div className="window-controls">
-            <button onClick={() => onMinimize(id)}>{isMinimized ? '🔼' : '🔽'}</button>
-            <button onClick={() => onToggleFullscreen(id)}>{isFullscreen ? '🗗' : '🗖'}</button>
-            <button onClick={() => onClose(id)}>X</button>
+      <Rnd
+        default={{
+          x: isFullscreen ? 0 : 50,
+          y: isFullscreen ? 0 : 50,
+          width: isFullscreen ? '100%' : 300,
+          height: isFullscreen ? '100%' : 200,
+        }}
+        enableResizing={!isFullscreen && !isMinimized}
+        bounds="parent"
+        className={windowClassNames}
+      >
+        <div>
+          <div className="window-header">
+            <span>{title}</span>
+            <div className="window-controls">
+              <button onClick={() => onMinimize(id)}>{isMinimized ? '🔼' : '🔽'}</button>
+              <button onClick={() => onToggleFullscreen(id)}>{isFullscreen ? '🗗' : '🗖'}</button>
+              <button onClick={() => onClose(id)}>X</button>
+            </div>
           </div>
+          {!isMinimized && <div className="window-content">{children}</div>}
         </div>
-        {!isMinimized && <div className="window-content">{children}</div>}
-      </div>
+      </Rnd>
     </Draggable>
   );
 };
