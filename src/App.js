@@ -1,4 +1,3 @@
-```jsx
 import React, { useState } from 'react';
 import Draggable from 'react-draggable';
 import './App.css';
@@ -58,4 +57,3 @@ const App = () => {
 };
 
 export default App;
-```
